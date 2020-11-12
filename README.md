@@ -41,4 +41,7 @@ Hvad du gerne vil have i din _gulpfile.js_:
 ```
 
 **``npm start``** for at starte gulp // 
+**``npm run all``** for at slette og genoprette dist-mappen, og derefter starte gulp
+
+
 **``ctrl + C``** for at afslutte gulp
