@@ -1,9 +1,9 @@
-## NPM + Gulp
+# NPM + Gulp
 
 !! Sørg for at npm er installeret på computeren
 
 **``npm init``**
-(Husk: MIT) // Dette opretter _package.json_
+(Husk: _license: MIT_) // Dette opretter _package.json_
 
 **``npm i gulp``**
 Dette opretter _package-lock.json_
