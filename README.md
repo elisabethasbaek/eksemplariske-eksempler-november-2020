@@ -9,12 +9,15 @@
 Dette opretter _package-lock.json_
 
 I package.json tilføj under _"scripts"_:
-**``"start": "gulp",``**
+
+    "start": "gulp",
+    "clean": "rm -Rf dist",
 
 Skriv **``gulpfile.js``** filen - lav evt. seperate filer til hver funktion
 
-(Kopier og kør i terminalen: 
-**``npm i gulp gulp-babel gulp-clean-css gulp-concat gulp-connect gulp-htmlmin gulp-image-resize gulp-sass gulp-sourcemaps gulp-htmlmin gulp-rename``**)
+Kopier og kør i terminalen: 
+
+    npm i gulp gulp-babel gulp-clean-css gulp-concat gulp-connect gulp-htmlmin gulp-image-resize gulp-sass gulp-sourcemaps gulp-htmlmin gulp-rename
 
 Hvis installation af gulp-filer fejler (på Windows) i terminalen i VS Code, så åben mappen dit projekt ligger i i stifinderen, klik på _fil_ oppe i toppen, og vælg _PowerShell_
 

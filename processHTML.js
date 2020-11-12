@@ -10,7 +10,7 @@ function processHTML(){
 		.pipe(htmlmin({ collapseWhitespace: true }))
 		.pipe(rename(function(path){
 			if(path.basename != "index"){
-				path.dirname = "./" + path.basename;
+				path.dirname = path.dirname + "/" + path.basename;
 				path.basename = "index";
 			}
 		}))
