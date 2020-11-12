@@ -1,3 +1,7 @@
+var { src, dest } = require("gulp");
+var { reload } = require("gulp-connect");
+var resize = require("gulp-image-resize");
+
 function processImages(){
 	return src("./src/images/**/*")
 		.pipe(resize({
@@ -7,5 +11,7 @@ function processImages(){
       		upscale: false
 		}))
         .pipe(dest("./dist/images"))
-		.pipe(connect.reload());
+		.pipe(reload());
 }
+
+module.exports = processImages;
