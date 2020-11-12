@@ -4,6 +4,7 @@
   "description": "En helt masse repetition",
   "main": "index.js",
   "scripts": {
+    "all": "npm run clean && npm start",
     "clean": "rm -Rf dist",
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"

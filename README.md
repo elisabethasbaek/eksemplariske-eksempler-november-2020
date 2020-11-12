@@ -10,6 +10,7 @@ Dette opretter _package-lock.json_
 
 I package.json tilføj under _"scripts"_:
 
+    "all": "npm run clean && npm start",
     "start": "gulp",
     "clean": "rm -Rf dist",
 
