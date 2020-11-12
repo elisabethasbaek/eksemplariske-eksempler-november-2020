@@ -11,8 +11,9 @@ Dette opretter _package-lock.json_
 I package.json tilføj under _"scripts"_:
 
     "all": "npm run clean && npm start",
-    "start": "gulp",
     "clean": "rm -Rf dist",
+    "start": "gulp",
+    "build": "gulp build",
 
 Skriv **``gulpfile.js``** filen - lav evt. seperate filer til hver funktion
 

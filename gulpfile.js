@@ -1,4 +1,4 @@
-var { watch, task, parallel} = require("gulp");
+var { watch, task, parallel, series } = require("gulp");
 var { server } = require("gulp-connect");
 
 var processHTML = require("./processHTML");
@@ -33,3 +33,4 @@ function serve(){
 };
 
 task("default", parallel(serve, watchEmAll));
+task("build", series(processHTML, processSass, processJS, processImages));
