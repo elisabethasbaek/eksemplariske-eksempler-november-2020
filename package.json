@@ -1,7 +1,7 @@
 {
-  "name": "infinite-scrolling",
+  "name": "repetetion",
   "version": "1.0.0",
-  "description": "Learning to do infinite scrolling, just ignore me",
+  "description": "En helt masse repetition",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
@@ -25,6 +25,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.7.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-image-resize": "^0.13.1",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5"
