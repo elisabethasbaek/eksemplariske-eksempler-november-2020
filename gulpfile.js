@@ -8,7 +8,8 @@ var resize = require("gulp-image-resize");
 var babel = require("gulp-babel");
 var concat = require("gulp-concat"); //alle javascriptfiler i src-mappen sættes sammen til én fil, så man behøver ikke import/export
 
-var processHTML = require("./requireHTML");
+var processHTML = require("./processeHTML");
+var processSass = require(".processSass");
 
 function watchEmAll(){ //hvis der er ændringer i filerne i de respektive mapper, så tygger gulp dem igennem
     watch("./src/html/**/*.html",
