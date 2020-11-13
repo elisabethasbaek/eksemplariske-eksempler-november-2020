@@ -1,0 +1,58 @@
+body{
+    background-color: lavender;
+    color: teal;
+    transition: background-color 0.5s ease-in, color 0.5s ease-in;
+}
+
+.darkmode{
+    background-color: rgb(136, 59, 136);
+    color: rgb(39, 0, 33);
+}
+
+form label[for="darkmodeToggle"]{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 4rem;
+    border: solid 2px lightgray;
+    border-radius: 2rem;
+    font-size: 3rem;
+}
+
+form label[for="darkmodeToggle"]::after{
+    position: absolute;
+    top: 4px;
+    left: 1px;
+    content: "";
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: lightblue;
+    border-radius: 50%;
+    transition: background-color 0.5s ease-in, transform 0.7s ease-in-out;
+}
+
+form input[type="checkbox"]{
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked ~ label::after{
+    background-color: rgb(97, 31, 97);
+    transform: translateX(142px);
+}
+
+input[type="checkbox"]:checked ~ label{
+    background-color: rgb(40, 85, 100);
+    border-color: rgb(61, 125, 146);
+}
+
+h1{
+    font-size: 3rem;
+    margin: 0;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 2rem;
+}

@@ -46,3 +46,16 @@ Hvad du gerne vil have i din _gulpfile.js_:
 
 
 **``ctrl + C``** for at afslutte gulp
+
+# Intersection Observer
+
+Hvad kan man bruge intersection observer til?
+
+- Lazy loading
+- Animationstrigger
+- Infinite scrolling
+
+_Threshold_ er hvor langt inde i viewporten som elementet er - kan også skrives son et array
+
+# Local Storage
+
